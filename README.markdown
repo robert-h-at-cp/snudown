@@ -1,26 +1,27 @@
-﻿Snudown for Ubuntu 14 reddit clones
-=========
-
-    $ sudo apt-get install gperf
-    $ cd ~/src
-    $ git clone https://github.com/libertysoft3/snudown.git
-    $ git checkout -b v1.5.0-saidit v1.5.0
-    $ cd snudown
-    edit `src/autolink.c` replace 'r' with 's' in "rewind = check_reddit_autolink_prefix(data, max_rewind, max_lookbehind, size, 'r');"
-    $ sudo python setup.py install
-
-TODO
-
-* add a /x/ parameter to the snudown installer and do this automatically
-* add to the reddit-LTS installer?
-
-
-Snudown
+﻿Snudown
 =======
 
 `Snudown` is a reddit-specific fork of the [Sundown](http://github.com/vmg/sundown)
 Markdown parser used by GitHub, with Python integration added.
 
+Custom /r/subreddit links
+----------
+
+In this example /r/ is replaced with /s/
+
+    $ sudo apt-get install gperf
+    $ cd ~/src
+    $ https://github.com/reddit/snudown.git
+    $ git checkout -b v1.5.0-s v1.5.0
+    $ cd snudown
+    edit `src/autolink.c` replace 'r' with 's' in "rewind = check_reddit_autolink_prefix(data, max_rewind, max_lookbehind, size, 'r');"
+    $ sudo python setup.py install
+
+### TODO
+
+* add a /s/ parameter to the installer to do this automatically?
+* add to the reddit-LTS installer?
+* support > 1 character?
 
 Install
 -------
