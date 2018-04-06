@@ -376,7 +376,7 @@ sd_autolink__subreddit(
 	size_t rewind;
 	int is_allminus = 0;
 
-	rewind = check_reddit_autolink_prefix(data, max_rewind, max_lookbehind, size, 'r');
+	rewind = check_reddit_autolink_prefix(data, max_rewind, max_lookbehind, size, 's');
 	if (!rewind)
 		return 0;
 
