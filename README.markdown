@@ -11,10 +11,14 @@ SaidIt changes:
 The SaidIt installer will install this snudown fork for you automatically.
 
 Install
--------
+-----
 
-Run `setup.py install` to install the module.
-
+    $ sudo apt-get install gperf
+    $ cd ~/src
+    $ git clone https://github.com/libertysoft3/snudown.git
+    $ cd snudown
+    $ git checkout v1.5.1
+    $ sudo python setup.py install
 
 Setup for development on Mac OS X
 ---------------------------------
