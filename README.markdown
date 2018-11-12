@@ -1,27 +1,14 @@
-﻿Snudown
+﻿SaidIt Snudown
 =======
 
 `Snudown` is a reddit-specific fork of the [Sundown](http://github.com/vmg/sundown)
 Markdown parser used by GitHub, with Python integration added.
 
-Custom /r/subreddit links
-----------
+SaidIt changes:
 
-In this example /r/ is replaced with /s/
+* subreddits identified with 's' rather than 'r'
 
-    $ sudo apt-get install gperf
-    $ cd ~/src
-    $ https://github.com/reddit/snudown.git
-    $ git checkout -b v1.5.0-s v1.5.0
-    $ cd snudown
-    edit `src/autolink.c` replace 'r' with 's' in "rewind = check_reddit_autolink_prefix(data, max_rewind, max_lookbehind, size, 'r');"
-    $ sudo python setup.py install
-
-### TODO
-
-* add a /s/ parameter to the installer to do this automatically?
-* add to the reddit-LTS installer?
-* support > 1 character?
+The SaidIt installer will install this snudown fork for you automatically.
 
 Install
 -------
